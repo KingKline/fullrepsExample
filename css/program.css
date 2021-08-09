@@ -5,16 +5,15 @@
     padding: 10px;
     margin-right: 10px;
   }
+  
   .grid-item, .grid-date {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 30px;
+    padding: 2.5px 2.5px 2.5px 2.5px;
+    font-size: 9px;
+
     text-align: center;
-    height: 50px;
+    min-height: 38px;
 
     display: flex;
     justify-content: center;
@@ -23,16 +22,15 @@
     border-radius: 5px;
   }
 
-
-
   .grid-date {
     background-color: rgba(255, 255, 255, 0.8);
+    padding: -10px;
+    margin: 0px;
   }
 
 
-
   input {
-    width:80%;
+    width:fit-content;
     border-radius: 5px;
     height:27px;
   }
@@ -41,11 +39,9 @@
     height:50px;
   }
 
-
-
   div.content {
     overflow-y:hidden;
-    margin-left: 200px;
+    margin-left: 190px;
     padding: 1px 16px;
   }
 
@@ -60,25 +56,18 @@
     padding: 0;
     width: 200px;
     background-color: #f1f1f1;
-    position: fixed;
+    position:fixed;
     height: 100%;
-    overflow: auto;
     text-align: center;
-  }
   
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
   }
-   
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+
+  .sidebarItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px;
+    padding:10px;
+    border-radius: 5px;
   }

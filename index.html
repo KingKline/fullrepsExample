@@ -5,25 +5,25 @@
 
     </head>
 
-    <script src="js/program.js"></script>
-    <link rel="stylesheet" href="css/program.css">
-
     <body>
 
         <div class="sidebar" id="sidebar">
-            <p style="background-color: red;" id="itemHybrid" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Hybrid</p>
-            <p style="background-color: blue;" id="itemRecovery" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Recovery</p>
-            <p style="background-color: orange;" id="itemLongToss" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>LongToss</p>
+            <h2 class="sidebarItem" style="background-color: orange;" id="itemHybrid" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Hybrid</h2>
+            <h2 class="sidebarItem" style="background-color: cyan;" id="itemLongToss" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>LongToss</h2>
+            <h2 class="sidebarItem" style="background-color: darkgreen;" id="itemPlyoRecovery" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Plyo&nbspRecovery</h2>
+            <h2 class="sidebarItem" style="background-color: blue;" id="itemBullPen" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>BullPen</h2>
+            <h2 class="sidebarItem" style="background-color: red;" id="itemGames" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Games</h2>
           
+
+
+
+
             <button onclick="addRow()">Add Row</button>
         </div>
 
           <div style="background-color: black;">
           <div class="content">
                 <div class="grid-container" id="grid" style="transform: scale(1);">
-                <script>
-                    addRow()
-                </script>
                 <!-- Rows Will Go Here-->
 
 
@@ -32,6 +32,9 @@
 
 
     </body>
+
+    <script src="js/program.js"></script>
+    <link rel="stylesheet" href="css/program.css">
 
 
 </html>

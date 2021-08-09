@@ -11,6 +11,7 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
 
   var cln = document.getElementById(data).cloneNode(true);
+  cln.className = ""
 
   var par = ev.target.parentNode;
   var par2 = par.parentNode;
@@ -38,7 +39,7 @@ function removeItm(data) {
         var el = document.getElementById(data);
         parBackround = el.parentNode
         console.log(parBackround)
-        parBackround.style.backgroundColor = "rgba(255, 255, 255, 0.8)"
+        parBackround.style.backgroundColor = ""
 
         el.remove();
     }
@@ -49,7 +50,7 @@ function removeItemBoxClick(data) {
   var par = document.getElementById(data);
   const myNode = document.getElementById(data);
 
-  par.style.backgroundColor = "rgba(255, 255, 255, 0.8)"
+  par.style.backgroundColor = ""
   myNode.innerHTML = '';
 
 }
