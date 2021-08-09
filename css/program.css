@@ -1,16 +1,52 @@
    .grid-container {
-       width: auto;
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     padding: 10px;
     margin-right: 10px;
   }
-  .grid-item {
+  .grid-item, .grid-date {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 30px;
     text-align: center;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+  }
+
+
+
+  .grid-date {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+
+
+  input {
+    width:80%;
+    border-radius: 5px;
+    height:27px;
+  }
+
+  button {
+    height:50px;
+  }
+
+
+
+  div.content {
+    overflow-y:hidden;
+    margin-left: 200px;
+    padding: 1px 16px;
   }
 
 
@@ -27,6 +63,7 @@
     position: fixed;
     height: 100%;
     overflow: auto;
+    text-align: center;
   }
   
   .sidebar a {
@@ -44,16 +81,4 @@
   .sidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
-  }
-  
-  div.content {
-    overflow-y:hidden;
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-
-
-  .test {
-      text-align: center;
   }

@@ -9,53 +9,26 @@
 
     <body>
 
-        <div class="sidebar test" id="sidebar">
-            <p id="itemHybrid" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Hybrid</p>
-            <p id="itemRecovery" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Recovery</p>
-            <p id="itemLongToss" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>LongToss</p>
-          </div>
+        <div class="sidebar" id="sidebar">
+            <p style="background-color: red;" id="itemHybrid" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Hybrid</p>
+            <p style="background-color: blue;" id="itemRecovery" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Recovery</p>
+            <p style="background-color: orange;" id="itemLongToss" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>LongToss</p>
+          
+            <button onclick="addRow()">Add Row</button>
+        </div>
 
           <div style="background-color: black;">
           <div class="content">
-            <div class="grid-container" id="grid">
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                <div class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>                 
-            </div>
-            </div>
+                <div class="grid-container" id="grid" style="transform: scale(1);">
+                <!-- Rows Will Go Here-->
 
-
-        <script src="js/program.js"></script>
-        <link rel="stylesheet" href="css/program.css">
+                </div>
+            </div>
 
 
     </body>
 
-
+    <script src="js/program.js"></script>
+    <link rel="stylesheet" href="css/program.css">
 
 </html>
