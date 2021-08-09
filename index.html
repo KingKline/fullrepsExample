@@ -8,17 +8,18 @@
     <body>
 
         <div class="sidebar" id="sidebar">
-            <h2 class="sidebarItem" style="background-color: orange;" id="itemHybrid" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Hybrid</h2>
-            <h2 class="sidebarItem" style="background-color: cyan;" id="itemLongToss" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>LongToss</h2>
-            <h2 class="sidebarItem" style="background-color: darkgreen;" id="itemPlyoRecovery" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Plyo&nbspRecovery</h2>
-            <h2 class="sidebarItem" style="background-color: blue;" id="itemBullPen" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>BullPen</h2>
-            <h2 class="sidebarItem" style="background-color: red;" id="itemGames" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" resizeable>Games</h2>
+            <h2 class="sidebarItem" style="background-color: orange;" id="itemHybrid" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" unselectable="on" resizeable>Hybrid</h2>
+            <h2 class="sidebarItem" style="background-color: cyan;" id="itemLongToss" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" unselectable="on" resizeable>LongToss</h2>
+            <h2 class="sidebarItem" style="background-color: darkgreen;" id="itemPlyoRecovery" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" unselectable="on" resizeable>Plyo&nbspRecovery</h2>
+            <h2 class="sidebarItem" style="background-color: blue;" id="itemBullPen" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)" unselectable="on" resizeable>BullPen</h2>
+            <h2 class="sidebarItem" style="background-color: red;" id="itemGames" draggable="true" ondragstart="drag(event)" onclick="removeItm(id)"  unselectable="on" resizeable>Games</h2>
           
 
 
 
 
             <button onclick="addRow()">Add Row</button>
+            <button onclick="clone()">Clone</button>
         </div>
 
           <div style="background-color: black;">

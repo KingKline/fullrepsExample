@@ -59,7 +59,7 @@ function removeItemBoxClick(data) {
 
 function addRow() {
   var content = document.getElementById("grid")
-  var text = '<div class="grid-date"><input type="date"></div>'
+  var text = '<div class="grid-date"><input id="' + uid() + '"type="date"></div>'
 
   for (let i = 0; i < 7; i++) {
     text += '<div id="' + uid() + '" onclick="removeItemBoxClick(id)" class="grid-item" ondrop="drop(event)" ondragover="allowDrop(event)"></div>';
@@ -73,6 +73,15 @@ function addRow() {
 const uid = function(){
   return Date.now().toString(36) + Math.random().toString(36).substr(2);
 }
+
+
+
+function clone() {
+  var par = document.getElementById("grid");
+  console.log(par)
+}
+
+
 
 //adds first row
 addRow()
